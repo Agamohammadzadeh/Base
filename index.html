@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="X-UA-Copitble">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="./css/style.css">
     <title> Base </title>
 </head>
 <body>
         
-    <header>
+    <header class="navbar">
         <div class="left">
             <div class="logo">
-                <img src="./Images/logo-light.svg" alt="Site Logo">
+                <img src="./Images/logo-light.svg" alt="Site Logo" class="logo-img">
             </div>
         </div>
         <div class="center">
-            <div class="menu-ul">
+            <ul class="menu-ul">
                 <li class="main-li">
-                    <a href="/" class="main-a">Home</a>
+                    <a href="/" class="main-a active">Home</a>
                 </li>
                 <li class="main-li">
                     <a href="#" class="main-a">Features</a>
                 </li>
-                <li class="main-li">
+                <li class="main-li dropdown-toggle">
                     <a href="#" class="main-a">Pages</a>
 
-                    <ul class="sub-menu">
+                    <ul class="sub-menu hidden">
                         <li class="sub-li">
                             <a href="/blog-grid/" class="sub-a">Blog Grid</a>
                         </li>
@@ -46,24 +48,26 @@
                 <li class="main-li">
                     <a href="#" class="main-a">Support</a>
                 </li>
-            </div>
+            </ul>
         </div>
         <div class="right">
-            <div class="theme-toggle">
-                <i class=""></i>
-            </div>
-            <div class="sign-in">
-                <a href="/sign-in/">
-                    Sign In
-                </a>
-            </div>
-            <div class="sign-up">
-                <a href="/sign-up/">
-                    Sign Up
-                </a>
+            <div class="content">
+                <div class="theme-toggle">
+                    <i class="fi fi-rr-brightness"></i>
+                </div>
+                <div class="sign-in">
+                    <a href="/sign-in/">
+                        Sign In
+                    </a>
+                </div>
+                <div class="sign-up">
+                    <a href="/sign-up/">
+                        Sign Up
+                    </a>
+                </div>
             </div>
         </div>
     </header>
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
